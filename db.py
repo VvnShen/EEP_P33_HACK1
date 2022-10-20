@@ -1,7 +1,7 @@
 import sqlalchemy
 import pg8000
 
-engine = sqlalchemy.create_engine("postgresql+pg8000://postgres:postgres@34.78.165.179/eep-p33-hack1-db")
+engine = sqlalchemy.create_engine("postgresql+pg8000://")
 result = engine.execute("SELECT * FROM greetings").fetchall()
 for row in result:
     print (row[2])
